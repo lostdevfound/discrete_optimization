@@ -1,0 +1,19 @@
+#Alborz Namazi Math 708
+
+reset; 					#reset the AMPL environment
+model thw1.mod;			#load the model
+data thw1.dat;			#load the data
+option solver Cplex;	#choose the solver
+solve;				
+
+
+/*
+#part a
+print "LS must be less than RS";
+display LSa, RSa;			#checking to see if LS <= RS
+display LSb, RSb;			#checking to see if LS <= RS
+display LSc, RSc;			#checking to see if LS <= RS
+*/
+
+#part c
+display SN, PI, A, B, X, z;
