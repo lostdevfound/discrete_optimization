@@ -1,4 +1,5 @@
-# Warmup problem
+# Warmup problem. Group knapsack problem.
+
 # Please use variable names that are descriptive. Do not use letters A, B etc.
 
 

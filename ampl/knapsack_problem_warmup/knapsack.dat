@@ -1,3 +1,6 @@
+# Group Knapsack problem data.
+# TODO Alborz please input your id
+
 param: A1 A2 A3 A4 pii :=
 	'x1' 13 13 13 12 13
 	'x2' 10 10 10 17 11
