@@ -1,3 +1,4 @@
+"city","city_ascii","province_id","province_name","lat","lng","population","density","timezone","ranking","postal","id"
 Vancouver,Vancouver,BC,British Columbia,49.25,-123.1,2264823.0,5492.6,America/Vancouver,1,V6Z V6S V6R V6P V6N V6M V6L V6K V6J V6H V6G V6E V6C V6B V6A V5S V5P V5Z V5N V5L V5M V5K V5V V5W V5T V5R V5X V5Y,1124825478
 Surrey,Surrey,BC,British Columbia,49.19,-122.8489,517887.0,1636.8,America/Vancouver,2,V4A V4N V4P V3R V3S V3T V3V V3W V3X V3Z,1124001454
 Victoria,Victoria,BC,British Columbia,48.4283,-123.3647,335696.0,4406.3,America/Vancouver,1,V8T V8W V8S V8R V9A V8V,1124147219
