@@ -20,8 +20,9 @@ const_2 = np.dot(einar_sol_ip, oli_id) <= bound_constr_oli
 const_3 = np.dot(einar_sol_ip, ben_id) <= bound_constr_ben
 const_4 = np.dot(einar_sol_ip, alb_id) <= bound_constr_alb
 
+print(const_1, const_2, const_3, const_4)
 
 if (const_1 and const_2) and (const_3 and const_4):
-    print('ein solution is feasible')
+    print('solution is feasible')
 else:
-    print('ein solution is not feasible')
+    print('solution is not feasible')
