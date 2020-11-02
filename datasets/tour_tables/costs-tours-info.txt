@@ -1,22 +1,430 @@
-Applying a 2-opt pass on the Christofides tour does not give any improvment.
-Aplying a 2-opt pass on the NN tour gives substantial improvment.
-Below are the tour sequences and costs for the original tours and 2-opt tours.
-
-chris cost 4590.323467352025
+chris cost 4709.576629488225
 2-opt chris cost 4590.323467352025
-Chris original tour: [0, 4, 10, 15, 1, 18, 27, 7, 19, 34, 16, 8, 6, 23, 14, 67, 66, 96, 51, 26, 74, 73, 79, 83, 63, 87, 62, 54, 69, 71, 81, 33, 64, 90, 85, 89, 92, 5, 28, 68, 88, 46, 56, 20, 72, 75, 94, 36, 11, 65, 53, 58, 17, 45, 31, 98, 84, 78, 93, 70, 41, 48, 61, 80, 25, 43, 42, 30, 82, 37, 59, 97, 47, 12, 91, 44, 76, 39, 24, 55, 38, 2, 35, 9, 40, 52, 50, 21, 29, 60, 95, 57, 77, 86, 32, 49, 99, 22, 13, 3, 0]
-Christ 2-opt tour: [0, 4, 10, 15, 1, 18, 27, 7, 19, 34, 16, 8, 6, 23, 14, 67, 66, 96, 51, 26, 74, 73, 79, 83, 63, 87, 62, 54, 69, 71, 81, 33, 64, 90, 85, 89, 92, 5, 28, 68, 88, 46, 56, 20, 72, 75, 94, 36, 11, 65, 53, 58, 17, 45, 31, 98, 84, 78, 93, 70, 41, 48, 61, 80, 25, 43, 42, 30, 82, 37, 59, 97, 47, 12, 91, 44, 76, 39, 24, 55, 38, 2, 35, 9, 40, 52, 50, 21, 29, 60, 95, 57, 77, 86, 32, 49, 99, 22, 13, 3, 0]
+Chris original tour: [ 0  4 10  3 13 22 99 49 32 86 77 57 12 91 29 44 76 39 24 55 38  2 35  9
+ 40 52 50 21 60 95 47 97 59 37 82 30 43 42 25 80 48 61 41 70 93 78 84 98
+ 31 45 17 58 53 11 65 36 94 75 72 20 56 51 68 88 28  5 92 46 89 85 90 64
+ 33 81 71 69 54 62 87 63 83 79 73 74 26 96 66 67 14 23  6  8 15 16 34 19
+ 27  7  1 18  0]
+Christ 2-opt tour: [ 0  4 10 15  1 18 27  7 19 34 16  8  6 23 14 67 66 96 51 26 74 73 79 83
+ 63 87 62 54 69 71 81 33 64 90 85 89 92  5 28 68 88 46 56 20 72 75 94 36
+ 11 65 53 58 17 45 31 98 84 78 93 70 41 48 61 80 25 43 42 30 82 37 59 97
+ 47 12 91 44 76 39 24 55 38  2 35  9 40 52 50 21 29 60 95 57 77 86 32 49
+ 99 22 13  3  0]
+
+Intersection 1
+	 Cities: Vancouver, Richmond, New Westminster, Vancouver
+	 Two edge cost before 2-opt switch: 23.63145675883449
+	 Add edge (Vancouver, New Westminster)
+	 Add edge (Richmond, Vancouver)
+	 Remove edge (Vancouver, Richmond)
+	 Remove edge (New Westminster, Vancouver)
+	 Two edge cost after 2-opt switch: 23.63145675883449
+Intersection 2
+	 Cities: Surrey, Coquitlam, Port Moody, Port Coquitlam
+	 Two edge cost before 2-opt switch: 15.39384439177497
+	 Add edge (Surrey, Port Moody)
+	 Add edge (Coquitlam, Port Coquitlam)
+	 Remove edge (Surrey, Coquitlam)
+	 Remove edge (Port Moody, Port Coquitlam)
+	 Two edge cost after 2-opt switch: 12.910135446100293
+Intersection 3
+	 Cities: Maple Ridge, White Rock, Burnaby, Delta
+	 Two edge cost before 2-opt switch: 46.84131642451797
+	 Add edge (Maple Ridge, Burnaby)
+	 Add edge (White Rock, Delta)
+	 Remove edge (Maple Ridge, White Rock)
+	 Remove edge (Burnaby, Delta)
+	 Two edge cost after 2-opt switch: 45.46233346673745
+Intersection 4
+	 Cities: Sechelt, Nanaimo, Cedar, Parksville
+	 Two edge cost before 2-opt switch: 79.23997116590044
+	 Add edge (Sechelt, Cedar)
+	 Add edge (Nanaimo, Parksville)
+	 Remove edge (Sechelt, Nanaimo)
+	 Remove edge (Cedar, Parksville)
+	 Two edge cost after 2-opt switch: 74.62846792642688
+Intersection 5
+	 Cities: Ladysmith, Duncan, Sooke, North Cowichan
+	 Two edge cost before 2-opt switch: 75.2680677897618
+	 Add edge (Ladysmith, Sooke)
+	 Add edge (Duncan, North Cowichan)
+	 Remove edge (Ladysmith, Duncan)
+	 Remove edge (Sooke, North Cowichan)
+	 Two edge cost after 2-opt switch: 74.3017109867062
+Intersection 6
+	 Cities: Ladysmith, Sooke, North Cowichan, Lake Cowichan
+	 Two edge cost before 2-opt switch: 92.84853079907504
+	 Add edge (Ladysmith, North Cowichan)
+	 Add edge (Sooke, Lake Cowichan)
+	 Remove edge (Ladysmith, Sooke)
+	 Remove edge (North Cowichan, Lake Cowichan)
+	 Two edge cost after 2-opt switch: 75.13859294910384
+Intersection 7
+	 Cities: Cumberland, Courtenay, Comox, Campbell River
+	 Two edge cost before 2-opt switch: 53.34325681945617
+	 Add edge (Cumberland, Comox)
+	 Add edge (Courtenay, Campbell River)
+	 Remove edge (Cumberland, Courtenay)
+	 Remove edge (Comox, Campbell River)
+	 Two edge cost after 2-opt switch: 51.61920045026396
+Intersection 8
+	 Cities: Comox, Powell River, Courtenay, Campbell River
+	 Two edge cost before 2-opt switch: 73.18220885822659
+	 Add edge (Comox, Courtenay)
+	 Add edge (Powell River, Campbell River)
+	 Remove edge (Comox, Powell River)
+	 Remove edge (Courtenay, Campbell River)
+	 Two edge cost after 2-opt switch: 60.86065892619412
+Intersection 9
+	 Cities: Port Hardy, Prince Rupert, Kitimat, Terrace
+	 Two edge cost before 2-opt switch: 493.59909431000574
+	 Add edge (Port Hardy, Kitimat)
+	 Add edge (Prince Rupert, Terrace)
+	 Remove edge (Port Hardy, Prince Rupert)
+	 Remove edge (Kitimat, Terrace)
+	 Two edge cost after 2-opt switch: 488.1082331771248
+Intersection 10
+	 Cities: Williams Lake, Kamloops, Merritt, Salmon Arm
+	 Two edge cost before 2-opt switch: 326.87180834129924
+	 Add edge (Williams Lake, Merritt)
+	 Add edge (Kamloops, Salmon Arm)
+	 Remove edge (Williams Lake, Kamloops)
+	 Remove edge (Merritt, Salmon Arm)
+	 Two edge cost after 2-opt switch: 317.0399771377996
+Intersection 11
+	 Cities: Coldstream, Summerland, Westbank, East Kelowna
+	 Two edge cost before 2-opt switch: 81.10270976142472
+	 Add edge (Coldstream, Westbank)
+	 Add edge (Summerland, East Kelowna)
+	 Remove edge (Coldstream, Summerland)
+	 Remove edge (Westbank, East Kelowna)
+	 Two edge cost after 2-opt switch: 80.5240918225409
+Intersection 12
+	 Cities: Coldstream, Westbank, Ellison, Lake Country
+	 Two edge cost before 2-opt switch: 65.7595605056332
+	 Add edge (Coldstream, Ellison)
+	 Add edge (Westbank, Lake Country)
+	 Remove edge (Coldstream, Westbank)
+	 Remove edge (Ellison, Lake Country)
+	 Two edge cost after 2-opt switch: 60.66610484443044
+Intersection 13
+	 Cities: Coldstream, Ellison, Lake Country, Lumby
+	 Two edge cost before 2-opt switch: 64.48522580267364
+	 Add edge (Coldstream, Lake Country)
+	 Add edge (Ellison, Lumby)
+	 Remove edge (Coldstream, Ellison)
+	 Remove edge (Lake Country, Lumby)
+	 Two edge cost after 2-opt switch: 58.36892299782239
+Intersection 14
+	 Cities: Summerland, East Kelowna, Penticton, Princeton
+	 Two edge cost before 2-opt switch: 93.90091092260883
+	 Add edge (Summerland, Penticton)
+	 Add edge (East Kelowna, Princeton)
+	 Remove edge (Summerland, East Kelowna)
+	 Remove edge (Penticton, Princeton)
+	 Two edge cost after 2-opt switch: 91.57622661034372
+Intersection 15
+	 Cities: Vancouver, New Westminster, Richmond, Vancouver
+	 Two edge cost before 2-opt switch: 23.63145675883449
+	 Add edge (Vancouver, Richmond)
+	 Add edge (New Westminster, Vancouver)
+	 Remove edge (Vancouver, New Westminster)
+	 Remove edge (Richmond, Vancouver)
+	 Two edge cost after 2-opt switch: 23.63145675883449
+Intersection 16
+	 Cities: White Rock, Langley, Burnaby, Maple Ridge
+	 Two edge cost before 2-opt switch: 44.10249952500592
+	 Add edge (White Rock, Burnaby)
+	 Add edge (Langley, Maple Ridge)
+	 Remove edge (White Rock, Langley)
+	 Remove edge (Burnaby, Maple Ridge)
+	 Two edge cost after 2-opt switch: 41.752184093447426
+Intersection 17
+	 Cities: White Rock, Burnaby, Surrey, New Westminster
+	 Two edge cost before 2-opt switch: 33.96330599437166
+	 Add edge (White Rock, Surrey)
+	 Add edge (Burnaby, New Westminster)
+	 Remove edge (White Rock, Burnaby)
+	 Remove edge (Surrey, New Westminster)
+	 Two edge cost after 2-opt switch: 26.31923895550817
+Intersection 18
+	 Cities: Surrey, Port Moody, New Westminster, Vancouver
+	 Two edge cost before 2-opt switch: 24.49604447607051
+	 Add edge (Surrey, New Westminster)
+	 Add edge (Port Moody, Vancouver)
+	 Remove edge (Surrey, Port Moody)
+	 Remove edge (New Westminster, Vancouver)
+	 Two edge cost after 2-opt switch: 23.916920560095516
+Intersection 19
+	 Cities: New Westminster, Burnaby, Port Moody, Vancouver
+	 Two edge cost before 2-opt switch: 26.868777955304868
+	 Add edge (New Westminster, Port Moody)
+	 Add edge (Burnaby, Vancouver)
+	 Remove edge (New Westminster, Burnaby)
+	 Remove edge (Port Moody, Vancouver)
+	 Two edge cost after 2-opt switch: 19.66365348710502
+Intersection 20
+	 Cities: Princeton, East Kelowna, Summerland, Peachland
+	 Two edge cost before 2-opt switch: 97.53206495406987
+	 Add edge (Princeton, Summerland)
+	 Add edge (East Kelowna, Peachland)
+	 Remove edge (Princeton, East Kelowna)
+	 Remove edge (Summerland, Peachland)
+	 Two edge cost after 2-opt switch: 74.11983245588544
+Intersection 21
+	 Cities: Powell River, Courtenay, Comox, Cumberland
+	 Two edge cost before 2-opt switch: 47.32823247624249
+	 Add edge (Powell River, Comox)
+	 Add edge (Courtenay, Cumberland)
+	 Remove edge (Powell River, Courtenay)
+	 Remove edge (Comox, Cumberland)
+	 Two edge cost after 2-opt switch: 39.897782843587336
+
 
 
 NN cost 4901.185132591991
 2-opt NN cost 4546.723317341365
-NN original tour [43 25 80 61 48 41 70 93 78 84 98 31 45 17 58 53 11 65 68 88 28  5 92 46
- 56 20 89 72 75 94 36 85 90 81 71 33 64 69 54 62 87 63 83 79 73 74 26 51
- 96 66 67 14 23  6  8 15 16 34 19  7 27  1 18  3  0  4 10 50 52 40  9 35
-  2 38 55 24 39 76 44 21 29 91 60 95 12 47 97 59 37 82 30 42 57 77 86 22
+NN original tour [43 42 30 82 37 59 97 47 12 95 60 29 21 91 50 52 40  9 55 38  2 35 39 24
+ 76 44 10  4  0  3 18  1 19  7 27 34 16  8 15  6 23 14 67 66 96 51 26 68
+ 88 28  5 92 46 56 20 72 75 94 36 89 11 65 74 73 79 83 63 87 62 54 69 33
+ 64 71 81 90 85 53 58 17 78 84 98 31 45 93 70 41 61 48 80 25 57 77 86 22
  13 32 49 99 43]
 NN 2-opt tour: [43 25 80 61 48 41 70 93 78 84 98 31 45 17 58 53 11 65 68 88 28  5 92 46
  56 20 89 72 75 94 36 85 90 81 71 33 64 69 54 62 87 63 83 79 73 74 26 51
  96 66 67 14 23  6  8 15 16 34 19  7 27  1 18  3  0  4 10 50 52 40  9 35
   2 38 55 24 39 76 44 21 29 91 60 95 12 47 97 59 37 82 30 42 57 77 86 22
  13 32 49 99 43]
+
+Intersection 1
+	 Cities: Powell River, Comox, Campbell River, Sechelt
+	 Two edge cost before 2-opt switch: 152.24233449406702
+	 Add edge (Powell River, Campbell River)
+	 Add edge (Comox, Sechelt)
+	 Remove edge (Powell River, Comox)
+	 Remove edge (Campbell River, Sechelt)
+	 Two edge cost after 2-opt switch: 137.2400488616353
+Intersection 2
+	 Cities: Port Hardy, Prince Rupert, Kitimat, Terrace
+	 Two edge cost before 2-opt switch: 493.59909431000574
+	 Add edge (Port Hardy, Kitimat)
+	 Add edge (Prince Rupert, Terrace)
+	 Remove edge (Port Hardy, Prince Rupert)
+	 Remove edge (Kitimat, Terrace)
+	 Two edge cost after 2-opt switch: 488.1082331771248
+Intersection 3
+	 Cities: Houston, Dawson Creek, Fort St. John, Chetwynd
+	 Two edge cost before 2-opt switch: 526.6401725530648
+	 Add edge (Houston, Fort St. John)
+	 Add edge (Dawson Creek, Chetwynd)
+	 Remove edge (Houston, Dawson Creek)
+	 Remove edge (Fort St. John, Chetwynd)
+	 Two edge cost after 2-opt switch: 523.6445097523201
+Intersection 4
+	 Cities: Houston, Fort St. John, Mackenzie, Vanderhoof
+	 Two edge cost before 2-opt switch: 591.6869182090054
+	 Add edge (Houston, Mackenzie)
+	 Add edge (Fort St. John, Vanderhoof)
+	 Remove edge (Houston, Fort St. John)
+	 Remove edge (Mackenzie, Vanderhoof)
+	 Two edge cost after 2-opt switch: 579.9409882629487
+Intersection 5
+	 Cities: Houston, Mackenzie, Vanderhoof, Prince George
+	 Two edge cost before 2-opt switch: 341.54366818443714
+	 Add edge (Houston, Vanderhoof)
+	 Add edge (Mackenzie, Prince George)
+	 Remove edge (Houston, Mackenzie)
+	 Remove edge (Vanderhoof, Prince George)
+	 Two edge cost after 2-opt switch: 338.5525348854027
+Intersection 6
+	 Cities: Vanderhoof, Fort St. John, Dawson Creek, Chetwynd
+	 Two edge cost before 2-opt switch: 414.0285757848651
+	 Add edge (Vanderhoof, Dawson Creek)
+	 Add edge (Fort St. John, Chetwynd)
+	 Remove edge (Vanderhoof, Fort St. John)
+	 Remove edge (Dawson Creek, Chetwynd)
+	 Two edge cost after 2-opt switch: 393.39659622443065
+Intersection 7
+	 Cities: Vanderhoof, Dawson Creek, Mackenzie, Prince George
+	 Two edge cost before 2-opt switch: 473.8221362927493
+	 Add edge (Vanderhoof, Mackenzie)
+	 Add edge (Dawson Creek, Prince George)
+	 Remove edge (Vanderhoof, Dawson Creek)
+	 Remove edge (Mackenzie, Prince George)
+	 Two edge cost after 2-opt switch: 421.3653390665645
+Intersection 8
+	 Cities: Williams Lake, Golden, Kamloops, Lumby
+	 Two edge cost before 2-opt switch: 473.9609704923222
+	 Add edge (Williams Lake, Kamloops)
+	 Add edge (Golden, Lumby)
+	 Remove edge (Williams Lake, Golden)
+	 Remove edge (Kamloops, Lumby)
+	 Two edge cost after 2-opt switch: 381.935095686419
+Intersection 9
+	 Cities: Merritt, Oliver, Peachland, Penticton
+	 Two edge cost before 2-opt switch: 169.13754320211183
+	 Add edge (Merritt, Peachland)
+	 Add edge (Oliver, Penticton)
+	 Remove edge (Merritt, Oliver)
+	 Remove edge (Peachland, Penticton)
+	 Two edge cost after 2-opt switch: 117.2330983604596
+Intersection 10
+	 Cities: Armstrong, Enderby, Salmon Arm, Lumby
+	 Two edge cost before 2-opt switch: 67.0594800475173
+	 Add edge (Armstrong, Salmon Arm)
+	 Add edge (Enderby, Lumby)
+	 Remove edge (Armstrong, Enderby)
+	 Remove edge (Salmon Arm, Lumby)
+	 Two edge cost after 2-opt switch: 64.72884390879445
+Intersection 11
+	 Cities: Armstrong, Salmon Arm, Lumby, Golden
+	 Two edge cost before 2-opt switch: 206.6366872857273
+	 Add edge (Armstrong, Lumby)
+	 Add edge (Salmon Arm, Golden)
+	 Remove edge (Armstrong, Salmon Arm)
+	 Remove edge (Lumby, Golden)
+	 Two edge cost after 2-opt switch: 197.63071329779945
+Intersection 12
+	 Cities: Fernie, Kimberley, Cranbrook, Creston
+	 Two edge cost before 2-opt switch: 135.72042509111986
+	 Add edge (Fernie, Cranbrook)
+	 Add edge (Kimberley, Creston)
+	 Remove edge (Fernie, Kimberley)
+	 Remove edge (Cranbrook, Creston)
+	 Two edge cost after 2-opt switch: 122.27234470571388
+Intersection 13
+	 Cities: Abbotsford, White Rock, Langley, Maple Ridge
+	 Two edge cost before 2-opt switch: 46.80560325556032
+	 Add edge (Abbotsford, Langley)
+	 Add edge (White Rock, Maple Ridge)
+	 Remove edge (Abbotsford, White Rock)
+	 Remove edge (Langley, Maple Ridge)
+	 Two edge cost after 2-opt switch: 45.26243486394482
+Intersection 14
+	 Cities: Pitt Meadows, Port Moody, Coquitlam, Port Coquitlam
+	 Two edge cost before 2-opt switch: 14.282469590340327
+	 Add edge (Pitt Meadows, Coquitlam)
+	 Add edge (Port Moody, Port Coquitlam)
+	 Remove edge (Pitt Meadows, Port Moody)
+	 Remove edge (Coquitlam, Port Coquitlam)
+	 Two edge cost after 2-opt switch: 13.68964816364747
+Intersection 15
+	 Cities: Pitt Meadows, Coquitlam, Port Coquitlam, Surrey
+	 Two edge cost before 2-opt switch: 18.821068821607938
+	 Add edge (Pitt Meadows, Port Coquitlam)
+	 Add edge (Coquitlam, Surrey)
+	 Remove edge (Pitt Meadows, Coquitlam)
+	 Remove edge (Port Coquitlam, Surrey)
+	 Two edge cost after 2-opt switch: 18.760339726426018
+Intersection 16
+	 Cities: Port Coquitlam, Port Moody, Coquitlam, Surrey
+	 Two edge cost before 2-opt switch: 15.39384439177497
+	 Add edge (Port Coquitlam, Coquitlam)
+	 Add edge (Port Moody, Surrey)
+	 Remove edge (Port Coquitlam, Port Moody)
+	 Remove edge (Coquitlam, Surrey)
+	 Two edge cost after 2-opt switch: 12.910135446100293
+Intersection 17
+	 Cities: Delta, Sooke, Langford Station, Colwood
+	 Two edge cost before 2-opt switch: 95.38287402689426
+	 Add edge (Delta, Langford Station)
+	 Add edge (Sooke, Colwood)
+	 Remove edge (Delta, Sooke)
+	 Remove edge (Langford Station, Colwood)
+	 Two edge cost after 2-opt switch: 95.21023319796217
+Intersection 18
+	 Cities: Delta, Langford Station, Central Saanich, North Saanich
+	 Two edge cost before 2-opt switch: 88.65832043000717
+	 Add edge (Delta, Central Saanich)
+	 Add edge (Langford Station, North Saanich)
+	 Remove edge (Delta, Langford Station)
+	 Remove edge (Central Saanich, North Saanich)
+	 Two edge cost after 2-opt switch: 86.6446468624448
+Intersection 19
+	 Cities: Delta, Central Saanich, Sidney, Lake Cowichan
+	 Two edge cost before 2-opt switch: 117.50282829256619
+	 Add edge (Delta, Sidney)
+	 Add edge (Central Saanich, Lake Cowichan)
+	 Remove edge (Delta, Central Saanich)
+	 Remove edge (Sidney, Lake Cowichan)
+	 Two edge cost after 2-opt switch: 112.34513599087198
+Intersection 20
+	 Cities: North Saanich, Langford Station, Central Saanich, Lake Cowichan
+	 Two edge cost before 2-opt switch: 77.6299339863534
+	 Add edge (North Saanich, Central Saanich)
+	 Add edge (Langford Station, Lake Cowichan)
+	 Remove edge (North Saanich, Langford Station)
+	 Remove edge (Central Saanich, Lake Cowichan)
+	 Two edge cost after 2-opt switch: 68.09689882175977
+Intersection 21
+	 Cities: Saanich, View Royal, Oak Bay, Colwood
+	 Two edge cost before 2-opt switch: 17.434822421519947
+	 Add edge (Saanich, Oak Bay)
+	 Add edge (View Royal, Colwood)
+	 Remove edge (Saanich, View Royal)
+	 Remove edge (Oak Bay, Colwood)
+	 Two edge cost after 2-opt switch: 12.984773796760255
+Intersection 22
+	 Cities: Colwood, Sooke, Metchosin, Langford Station
+	 Two edge cost before 2-opt switch: 25.914404092252937
+	 Add edge (Colwood, Metchosin)
+	 Add edge (Sooke, Langford Station)
+	 Remove edge (Colwood, Sooke)
+	 Remove edge (Metchosin, Langford Station)
+	 Two edge cost after 2-opt switch: 23.935136663583204
+Intersection 23
+	 Cities: Metchosin, Sooke, Langford Station, Lake Cowichan
+	 Two edge cost before 2-opt switch: 70.87744759999917
+	 Add edge (Metchosin, Langford Station)
+	 Add edge (Sooke, Lake Cowichan)
+	 Remove edge (Metchosin, Sooke)
+	 Remove edge (Langford Station, Lake Cowichan)
+	 Two edge cost after 2-opt switch: 62.561307425206905
+Intersection 24
+	 Cities: Sooke, Lake Cowichan, North Cowichan, Ladysmith
+	 Two edge cost before 2-opt switch: 75.13859294910384
+	 Add edge (Sooke, North Cowichan)
+	 Add edge (Lake Cowichan, Ladysmith)
+	 Remove edge (Sooke, Lake Cowichan)
+	 Remove edge (North Cowichan, Ladysmith)
+	 Two edge cost after 2-opt switch: 75.03634871459657
+Intersection 25
+	 Cities: Vernon, Spallumcheen, Lumby, Enderby
+	 Two edge cost before 2-opt switch: 56.140477931491446
+	 Add edge (Vernon, Lumby)
+	 Add edge (Spallumcheen, Enderby)
+	 Remove edge (Vernon, Spallumcheen)
+	 Remove edge (Lumby, Enderby)
+	 Two edge cost after 2-opt switch: 33.93137589589972
+Intersection 26
+	 Cities: Lumby, Armstrong, Spallumcheen, Enderby
+	 Two edge cost before 2-opt switch: 40.14543566945437
+	 Add edge (Lumby, Spallumcheen)
+	 Add edge (Armstrong, Enderby)
+	 Remove edge (Lumby, Armstrong)
+	 Remove edge (Spallumcheen, Enderby)
+	 Two edge cost after 2-opt switch: 40.043240964406316
+Intersection 27
+	 Cities: View Royal, Colwood, Langford Station, Sooke
+	 Two edge cost before 2-opt switch: 23.80715992992022
+	 Add edge (View Royal, Langford Station)
+	 Add edge (Colwood, Sooke)
+	 Remove edge (View Royal, Colwood)
+	 Remove edge (Langford Station, Sooke)
+	 Two edge cost after 2-opt switch: 23.02878029434451
+Intersection 28
+	 Cities: Langford Station, Metchosin, Colwood, Sooke
+	 Two edge cost before 2-opt switch: 25.914404092252937
+	 Add edge (Langford Station, Colwood)
+	 Add edge (Metchosin, Sooke)
+	 Remove edge (Langford Station, Metchosin)
+	 Remove edge (Colwood, Sooke)
+	 Two edge cost after 2-opt switch: 17.250491332292615
+Intersection 29
+	 Cities: Sooke, North Cowichan, Duncan, Lake Cowichan
+	 Two edge cost before 2-opt switch: 74.66404492748939
+	 Add edge (Sooke, Duncan)
+	 Add edge (North Cowichan, Lake Cowichan)
+	 Remove edge (Sooke, North Cowichan)
+	 Remove edge (Duncan, Lake Cowichan)
+	 Two edge cost after 2-opt switch: 68.39064875509494
+
